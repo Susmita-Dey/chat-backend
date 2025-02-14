@@ -4,7 +4,8 @@
   "info": {
     "singularName": "chat-message",
     "pluralName": "chat-messages",
-    "displayName": "chat_messages"
+    "displayName": "chat_messages",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,6 +16,11 @@
     },
     "timestamp": {
       "type": "datetime"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
     }
   }
 }

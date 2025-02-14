@@ -372,6 +372,7 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
 export interface ApiChatMessageChatMessage extends Struct.CollectionTypeSchema {
   collectionName: 'chat_messages';
   info: {
+    description: '';
     displayName: 'chat_messages';
     pluralName: 'chat-messages';
     singularName: 'chat-message';
@@ -395,6 +396,10 @@ export interface ApiChatMessageChatMessage extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    users_permissions_user: Schema.Attribute.Relation<
+      'oneToOne',
+      'plugin::users-permissions.user'
+    >;
   };
 }
 
