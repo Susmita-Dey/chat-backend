@@ -15,22 +15,21 @@
     "@strapi/plugin-users-permissions": "5.10.2",
     "@strapi/strapi": "5.10.2",
     "better-sqlite3": "11.3.0",
+    "chat-backend": "file:",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
+    "socket.io": "^4.8.1",
     "styled-components": "^6.0.0"
-  },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "typescript": "^5"
   },
   "engines": {
     "node": ">=18.0.0 <=22.x.x",
     "npm": ">=6.0.0"
   },
   "strapi": {
-    "uuid": "0b564910-fd15-47da-8f46-bc07af88bfdf"
+    "uuid": "a34f5c52-6aa4-4328-9870-00755f4f442b"
   }
 }

@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chat_messages",
+  "info": {
+    "singularName": "chat-message",
+    "pluralName": "chat-messages",
+    "displayName": "chat_messages"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "message": {
+      "type": "text"
+    },
+    "timestamp": {
+      "type": "datetime"
+    }
+  }
+}
